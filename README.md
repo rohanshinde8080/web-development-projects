@@ -4,14 +4,6 @@ This repository contains a collection of my web development mini projects create
 
 ---
 
-## 👤 About Me
-**Rohan Shinde**  
-MCA Student | Aspiring Full Stack Developer  
-Passionate about building web applications using HTML, CSS, JavaScript, PHP, and XML technologies.
-
-
----
-
 ## 🛠️ Technologies Used
 - HTML  
 - CSS  
