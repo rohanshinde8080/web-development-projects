@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="userApp">
+<head>
+  <meta charset="UTF-8">
+  <title>AngularJS User Form</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+  <style>
+    body 
+    {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #c6e2ff, #f3f8ff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h2 
+    {
+      margin-top: 30px;
+      color: #333;
+      font-size: 26px;
+      text-align: center;
+    }
+
+    form 
+    {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 350px;
+      margin-top: 20px;
+    }
+
+    label 
+    {
+      font-weight: 600;
+      color: #555;
+    }
+
+    input, select 
+    {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    input.ng-invalid.ng-touched,
+    select.ng-invalid.ng-touched 
+    {
+      border-color: #e74c3c;
+      background-color: #fdf2f2;
+    }
+
+    .error 
+    {
+      color: #e74c3c;
+      font-size: 13px;
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+
+    button 
+    {
+      width: 100%;
+      background: #4CAF50;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover 
+    {
+      background: #45a049;
+    }
+
+    button:disabled
+    {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+
+    table 
+    {
+      margin-top: 30px;
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 700px;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td
+    {
+      text-align: left;
+      padding: 12px 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th 
+    {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: 600;
+    }
+
+    tr:hover 
+    {
+      background-color: #f9f9f9;
+    }
+
+    .success-message 
+    {
+      color: #2e7d32;
+      background-color: #e8f5e9;
+      border: 1px solid #a5d6a7;
+      padding: 10px 15px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 15px;
+      width: 350px;
+    }
+  </style>
+</head>
+
+<body ng-controller="UserController">
+  <h2>User Registration Form</h2>
+
+  <form name="userForm" ng-submit="submitForm()" novalidate>
+    <label>Name:</label>
+    <input type="text" name="name" ng-model="user.name" required>
+    <div ng-show="userForm.name.$touched && userForm.name.$invalid" class="error">
+      Name is required.
+    </div>
+
+    <label>Email:</label>
+    <input type="email" name="email" ng-model="user.email" required>
+    <div ng-show="userForm.email.$touched && userForm.email.$invalid" class="error">
+      Enter a valid email.
+    </div>
+
+    <label>Course:</label>
+    <select name="course" ng-model="user.course" required>
+      <option value="">-- Select Course --</option>
+      <option ng-repeat="course in courses" value="{{course}}">{{course}}</option>
+    </select>
+    <div ng-show="userForm.course.$touched && userForm.course.$invalid" class="error">
+      Course selection is required.
+    </div>
+
+    <button type="submit" ng-disabled="userForm.$invalid">Submit</button>
+  </form>
+
+  <div ng-if="submitted" class="success-message">
+    Record submitted successfully!
+  </div>
+
+  <div ng-if="submitted">
+    <h2>Entered User Details</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Course</th>
+      </tr>
+      <tr>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.course}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <script>
+    var app = angular.module('userApp', []);
+
+    app.controller('UserController', function($scope) 
+    {
+      $scope.user = {};
+      $scope.submitted = false;
+
+      $scope.courses = [
+        "Python",
+        "Java",
+        "C++",
+        "ReactJS",
+        "Angular",
+        "Web Development",
+        "Data Science"
+      ];
+
+      $scope.submitForm = function() 
+      {
+        if ($scope.userForm.$valid) 
+        {
+          $scope.submitted = true;
+        }
+      };
+    });
+  </script>
+</body>
+</html>

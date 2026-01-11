@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+<student_records>
+    <student id="S1001">
+        <name>aniket more</name>
+        <email>aniket.more@example.edu</email>
+        <courses>
+            <course>
+                <title>Data Structures &amp; Algorithms</title>
+                <grade>A</grade>
+            </course>
+            <course>
+                <title>Database Management Systems</title>
+                <grade>B+</grade>
+            </course>
+            <course>
+                <title>Web Development</title>
+                <grade>A-</grade>
+            </course>
+        </courses>
+    </student>
+    <student id="S1002">
+        <name>yash rokde</name>
+        <email>yash.rokde@example.edu</email>
+        <courses>
+            <course>
+                <title>Operating Systems</title>
+                <grade>B</grade>
+            </course>
+            <course>
+                <title>Computer Networks</title>
+                <grade>C+</grade>
+            </course>
+            <course>
+                <title>Software Engineering</title>
+                <grade>B+</grade>
+            </course>
+        </courses>
+    </student>
+    <student id="S1003">
+        <name>rohan shinde</name>
+        <email>rohan.shinde@example.edu</email>
+        <courses>
+            <course>
+                <title>Artificial Intelligence</title>
+                <grade>A</grade>
+            </course>
+            <course>
+                <title>Machine Learning</title>
+                <grade>A</grade>
+            </course>
+            <course>
+                <title>Cyber Security</title>
+                <grade>B-</grade>
+            </course>
+        </courses>
+    </student>
+</student_records>

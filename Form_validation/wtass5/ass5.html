@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      padding: 20px;
+    }
+
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"] {
+      width: 95%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    input[type="date"]:focus {
+      border-color: #007bff;
+    }
+
+    input[type="submit"] {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background: #0056b3;
+    }
+
+    #datetime {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+   
+   <form name ="myform"onsubmit="f()"><br>
+    <label name="t" id="s"></label>
+    <div>
+    Name:<input type="text" name="fname"><br>
+    Email::<input type="email" name="femail"><br>
+    Phone No:<input type="number" name="no"><br>
+    Birth Date:<input type="date" name="dob"><br>
+    <input type="submit" value="SUBMIT">
+    <label name="t" id="s"></label>
+    </div>
+    </form> 
+       <script>
+        function time()
+        {
+            const now = new Date();
+                const options = { weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+                const formattedDateTime = now.toLocaleDateString('en-US', options);
+                document.getElementById('datetime').textContent = formattedDateTime;
+        }
+            Time();
+            setInterval(Time,1000);
+        
+        function f()
+        {
+            let n=document.forms["myform"]['fname'].value;
+            let e = document.forms['myform']['femail'].value;
+            let p = document.forms['myform']['no'].value;
+            let b = document.forms['myform']['dob'].value;
+            if(n=="")
+            {
+                alert("name should br entered");
+            } 
+            else if(e=="")
+            {
+                alert("email should br entered");
+            }
+            else if(p=="")
+            {
+                alert("phone no should be entered");
+
+            }
+            else
+            {
+              alert("Submit successfully");
+            }
+        }
+
+       </script> 
+
+</body>
+</html>

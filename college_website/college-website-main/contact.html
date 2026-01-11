@@ -1,0 +1,264 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - Sanjivani University</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #002147;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ffc107;
+      border-bottom: 2px solid #ffc107;
+    }
+    .contact {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #fff;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  animation: fadeDown 1s ease forwards;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-box {
+  flex: 1 1 280px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  transition: all 0.4s ease;
+  animation: fadeUp 1s ease forwards;
+}
+
+.contact-box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 25px 50px rgba(56,189,248,0.4);
+}
+
+.contact-box h3 {
+  color: #38bdf8;
+  margin-bottom: 12px;
+}
+
+.contact-box a {
+  color: #e0f2fe;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-box a:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+/* Map box */
+.map-box {
+  flex: 1 1 100%;
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 14px;
+  margin-top: 15px;
+  transition: transform 0.4s ease;
+}
+
+.map-box iframe:hover {
+  transform: scale(1.02);
+}
+
+/* Footer */
+.footer {
+  background: #020617;
+  color: #cbd5f5;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    .contact {
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+    }
+
+    .contact h2 {
+      color: #002147;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .contact-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .contact-box {
+      flex: 1 1 300px;
+      background-color: white;
+      padding: 20px;
+      border: 2px solid #003366;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .contact-box h3 {
+      color: #002147;
+      margin-bottom: 10px;
+    }
+
+    .contact-box a {
+      color: #003366;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-box iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #002147;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><i class="fas fa-graduation-cap"></i> SANJIVANI UNIVERSITY</div>
+    <nav>
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="courses.html">COURSES</a>
+      <a href="contact.html" class="active">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact">
+  <h2 class="contact-title">Contact Us</h2>
+
+  <div class="contact-container">
+    <div class="contact-box">
+      <h3>📞 Phone</h3>
+      <p><a href="tel:+911234567890">+91 12345 67890</a></p>
+    </div>
+
+    <div class="contact-box">
+      <h3>📧 Email</h3>
+      <p><a href="mailto:info@sanjivaniuniversity.edu">info@sanjivaniuniversity.edu</a></p>
+    </div>
+
+    <div class="contact-box">
+      <h3>📍 Address</h3>
+      <p>Sanjivani University Campus,<br>Kopargaon, Maharashtra, India</p>
+    </div>
+
+    <div class="contact-box map-box">
+      <h3>🗺️ Map</h3>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.516001713682!2d74.49919107499964!3d19.902649081479705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdc438ae78a5f6d%3A0x1c714adce628161f!2sSanjivani%20College%20Of%20Engineering%20Workshop!5e0!3m2!1sen!2sin!4v1754318579149!5m2!1sen!2sin"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  &copy; 2025 Sanjivani University | CS Department
+</footer>
+

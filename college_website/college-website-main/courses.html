@@ -1,0 +1,233 @@
+<!-- courses.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Courses - Sanjivani University</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #002147;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ffc107;
+      border-bottom: 2px solid #ffc107;
+    }
+    .course-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.course-box {
+  background: linear-gradient(135deg, #1f2933, #111827);
+  color: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.course-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.course-box:hover::before {
+  opacity: 0.15;
+}
+
+.course-box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(59,130,246,0.4);
+}
+
+.course-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #38bdf8;
+  position: relative;
+  z-index: 1;
+}
+
+.course-box p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #d1d5db;
+  position: relative;
+  z-index: 1;
+}
+
+/* Entry animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    .courses {
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .courses h2 {
+      color: #002147;
+      margin-bottom: 30px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    .course-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .course-box {
+      border: 2px solid #003366;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 220px;
+    }
+
+    .course-box:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #002147;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><i class="fas fa-graduation-cap"></i> SANJIVANI UNIVERSITY</div>
+    <nav>
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="courses.html" class="active">COURSES</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="courses">
+    <h2>Our Courses</h2>
+   <div class="course-container">
+  <div class="course-box">
+    <h3 class="course-title">MCA</h3>
+    <p>Postgraduate in software engineering, app dev & IT management.</p>
+  </div>
+
+  <div class="course-box">
+    <h3 class="course-title">BCA</h3>
+    <p>Intro to programming, DBMS & computer networks.</p>
+  </div>
+
+  <div class="course-box">
+    <h3 class="course-title">B.Tech AI & ML</h3>
+    <p>Hands-on machine learning with real applications.</p>
+  </div>
+
+  <div class="course-box">
+    <h3 class="course-title">Cyber Security</h3>
+    <p>Focus on ethical hacking and network defense.</p>
+  </div>
+
+  <div class="course-box">
+    <h3 class="course-title">Data Science</h3>
+    <p>Analyze data using Python, R, and tools.</p>
+  </div>
+
+  <div class="course-box">
+    <h3 class="course-title">Full Stack Dev</h3>
+    <p>HTML, CSS, JS, React & Node.js deployment.</p>
+  </div>
+
+  <div class="course-box">
+    <h3 class="course-title">Cloud Computing</h3>
+    <p>Work with AWS, Azure & cloud architecture.</p>
+  </div>
+
+  <div class="course-box">
+    <h3 class="course-title">PGD in AI</h3>
+    <p>Short AI program aligned with industry needs.</p>
+  </div>
+</div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Sanjivani University | CS Department
+  </footer>
+</body>
+</html>

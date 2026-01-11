@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="book.xsd">
+    <book>
+        <title>Clean Code: A Handbook of Agile Software Craftsmanship</title>
+        <author>Robert C. Martin</author>
+        <price>35.99</price>
+        <genre>Software Development</genre>
+    </book>
+    <book>
+        <title>The Pragmatic Programmer: Your Journey To Mastery</title>
+        <author>Andrew Hunt, David Thomas</author>
+        <price>32.50</price>
+        <genre>Software Development</genre>
+    </book>
+    <book>
+        <title>Introduction to Algorithms</title>
+        <author>Thomas H. Cormen, Charles E. Leiserson</author>
+        <price>75.00</price>
+        <genre>Computer Science</genre>
+    </book>
+    <book>
+        <title>Cracking the Coding Interview</title>
+        <author>Gayle Laakmann McDowell</author>
+        <price>40.00</price>
+        <genre>Career Development</genre>
+    </book>
+</bookstore>

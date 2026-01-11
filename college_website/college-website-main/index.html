@@ -1,0 +1,328 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home - Sanjivani University</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #002147;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #ffc107;
+      border-bottom: 2px solid #ffc107;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #003366, #0056b3);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: auto;
+    }
+    /* HERO */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: radial-gradient(circle, rgba(56,189,248,0.18), transparent 60%);
+  animation: heroGlow 8s ease-in-out infinite;
+}
+
+.hero-title {
+  font-size: 3.4rem;
+  color: #38bdf8;
+  animation: slideDown 1.2s ease forwards;
+  z-index: 1;
+}
+
+.hero-subtitle {
+  max-width: 700px;
+  margin: 20px 0 35px;
+  font-size: 1.1rem;
+  color: #e5e7eb;
+  animation: fadeUp 1.4s ease forwards;
+  z-index: 1;
+}
+
+.hero-btn {
+  padding: 14px 36px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  font-weight: 600;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  animation: fadeUp 1.8s ease forwards;
+  z-index: 1;
+}
+
+.hero-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(56,189,248,0.7);
+}
+
+/* ABOUT */
+.about-college {
+  padding: 90px 20px;
+  background: #020617;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #38bdf8;
+  margin-bottom: 25px;
+  animation: slideDown 1s ease forwards;
+}
+
+.about-text {
+  max-width: 900px;
+  margin: auto;
+  color: #d1d5db;
+  line-height: 1.8;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+/* FEATURES */
+.features {
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.feature-box {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  padding: 35px;
+  border-radius: 22px;
+  text-align: center;
+  color: #e5e7eb;
+  transition: all 0.5s ease;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.feature-box i {
+  font-size: 2.8rem;
+  color: #38bdf8;
+  margin-bottom: 18px;
+}
+
+.feature-box:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 25px 50px rgba(56,189,248,0.45);
+}
+
+/* FOOTER */
+.footer {
+  background: #020617;
+  color: #cbd5f5;
+  text-align: center;
+  padding: 25px;
+}
+
+/* ANIMATIONS */
+@keyframes heroGlow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(35px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+    .about-college {
+      background: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about-college h2 {
+      color: #002147;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .about-college p {
+      font-size: 1.1em;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #003366;
+      padding: 50px 20px;
+      gap: 20px;
+      color: white;
+    }
+
+    .feature-box {
+      background-color: #002147;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      width: 250px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .feature-box i {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #ffc107;
+    }
+
+    footer {
+      background-color: #002147;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"><i class="fas fa-graduation-cap"></i> SANJIVANI UNIVERSITY</div>
+    <nav>
+      <a href="home.html" class="active">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="courses.html">COURSES</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <!-- Hero Section -->
+<section class="hero">
+  <h1 class="hero-title">Welcome to Sanjivani University</h1>
+  <p class="hero-subtitle">
+    Fostering Innovation, Research, and Academic Excellence in the Heart of Maharashtra.
+  </p>
+  <a href="#about" class="hero-btn">Explore More</a>
+</section>
+
+<!-- About College -->
+<section class="about-college" id="about">
+  <h2 class="section-title">About Our Institution</h2>
+  <p class="about-text">
+    Sanjivani University is a premier educational institution committed to nurturing the next generation
+    of innovators, engineers, and leaders. Our Computer Science department offers a holistic education
+    through a blend of theory, practical skills, and real-world exposure.
+  </p>
+</section>
+
+<!-- Features -->
+<section class="features">
+  <div class="feature-box">
+    <i class="fas fa-university"></i>
+    <h3>Modern Infrastructure</h3>
+    <p>World-class labs, smart classrooms, and campus facilities.</p>
+  </div>
+
+  <div class="feature-box">
+    <i class="fas fa-user-graduate"></i>
+    <h3>Student-Centric Learning</h3>
+    <p>Innovative teaching methodologies focused on student growth.</p>
+  </div>
+
+  <div class="feature-box">
+    <i class="fas fa-robot"></i>
+    <h3>Tech-Driven Curriculum</h3>
+    <p>Courses aligned with AI, ML, Cloud, and modern technologies.</p>
+  </div>
+
+  <div class="feature-box">
+    <i class="fas fa-briefcase"></i>
+    <h3>Career Opportunities</h3>
+    <p>Strong placement support and industrial collaboration.</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  &copy; 2025 Sanjivani University | Department of Computer Science
+</footer>
+

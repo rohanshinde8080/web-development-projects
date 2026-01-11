@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Portfolio</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ background: linear-gradient(to right,#33ffc5 , #0056b3);
+    color: #fff;
+}
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, #4e54c8, #8f94fb);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+     
+    .hero img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: white;
+      color: #4e54c8;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+      margin-top: 10px;
+    }
+
+    .hero .btn:hover {
+      background: #e0e0e0;
+    }
+    table th {
+  background-color: #f0f0ff;
+  color: #4e54c8;
+}
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #4e54c8;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+
+    /* Contact Form */
+    form {
+      margin-top: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    input[type="submit"] {
+      background-color: #4e54c8;
+      color: white;
+      border: none;
+      margin-top: 25px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #3b3fc1;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9em;
+      margin-top: 5px;
+    }
+
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      margin-right: 15px;
+      font-weight: bold;
+    }
+    footer {
+    background: linear-gradient(to right,#33ffc5 , #0056b3);
+    color: #fff;
+
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="C:\Users\rohan\OneDrive\Pictures\my.jpg" alt="" />
+    <h1>SHINDE ROHAN</h1>
+    <p><b>I Am Full Stack Developer & Coder</b></p>
+</section>
+
+  <!-- Main Content -->
+
+  <section id="About Me" class="about-section">
+      <div class="container">
+    <h2>About Me</h2>
+    <p>Hello!!  I'm <b>Rohan ,</b> a passionate Software developer currently pursuing my Master of Computer Applications (MCA) at Sanjivani University. </p>
+</div>
+</section>
+<section id="skills" class="skills-section">
+        <div class="container">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML  </li>
+      <li>JavaScript</li>
+       <li>Java  </li>
+        <li>c++ </li>
+
+      <li>Python </li>
+      <li>Responsive Design</li>
+    </ul>
+</div>
+</section>
+<section id="Education" class="Education-section">
+        <div class="container">
+
+<h2>Education</h2>
+<table>
+  <tr>
+    <th>Qualification</th>
+    <th>Institute</th>
+    <th>Year</th>
+    <th>Percentage</th>
+  </tr>
+       <tr>
+    <td>SSC (10th)</td>
+    <td>SNADMV,rui</td>
+    <td>2020</td>
+    <td>80.30%</td>
+  </tr>
+
+     <tr>
+    <td>HSC (12th Science)</td>
+    <td>Shri Saibaba Jr. College, Shirdi</td>
+    <td> 2022</td>
+    <td>58%</td>
+  </tr>
+
+       <tr>
+    <td>Bachelor of Computer Applications (BCA)</td>
+    <td>Shree Saibaba Senior College, Shirdi</td>
+    <td> 2025</td>
+    <td>CGPA:-8.38</td>
+  </tr>
+
+  <tr>
+    <td>Master of Computer Applications (MCA)</td>
+    <td>Sanjivani University</td>
+    <td>2025 – Present</td>
+    <td>—</td>
+  </tr>
+ </table>
+  </div>
+</section>
+<section id="Project" class="Project-section">
+        <div class="container">
+
+      <h2>Project</h2>
+    <table>
+      <tr>
+        <th>Project</th>
+        <th>Description</th>
+        <th>Link</th>
+      </tr>
+           <tr>
+        <td>Cow management</td>
+        <td><p>                The Cow Management System is a web-based application designed to help farmers efficiently track and manage their cattle. It includes features such as recording cow details, monitoring health status, managing breeding cycles, and tracking medical expenses. The Breeding Status feature allows farmers to view and manage breeding records. Additionally, the system calculates the total medical cost for each cow, helping farmers track expenses. With a user-friendly interface, easy record management, and expense tracking, this application enhances productivity and ensures better livestock management for farmers.
+
+
+</p></td>
+        <td><a href="C:\Users\rohan\Documents\cow presentation.pdf"blank">Visit</a></td>
+      </tr>
+         </table>
+        </div>
+</section>
+
+     <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+         <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:your.email@example.com">rohanshinde8008@gmail.com</a></p>
+                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/rohan-shinde-9ba59b361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_apptarget="_blank">linkedin.com/in/Rohanshinde</a></p>
+                <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/rohanshinde8080" target="_blank">github.com/Rohanshinde</a></p>
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Shinde Rohan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
