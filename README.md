@@ -9,8 +9,6 @@ This repository contains a collection of my web development mini projects create
 MCA Student | Aspiring Full Stack Developer  
 Passionate about building web applications using HTML, CSS, JavaScript, PHP, and XML technologies.
 
-🌐 **Live Portfolio**  
-https://rohanshinde8080.github.io/web-development-projects/
 
 ---
 
